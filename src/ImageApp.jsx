@@ -15,7 +15,7 @@ const ImageApp=()=>{
         func();
     }
 
-    const API_KEY= import.meta.env.VITE_Unsplash_API_KEY
+    const API_KEY= 'r5aXB5rqkWafeqCERsBMZ1kM4xsVjLmcooMFVhTf7Tc'
     console.log(API_KEY)
     const func=async ()=>{
         const get=await fetch(`https:/api.unsplash.com/search/photos?page=1&query=${search}&client_id=${API_KEY}`)
