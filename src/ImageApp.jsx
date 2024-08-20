@@ -14,7 +14,7 @@ const ImageApp = () => {
 
   const func = async () => {
     const get = await fetch(
-      `https:/api.unsplash.com/search/photos?page=1&query=${search}&client_id=${API_KEY}`
+      `https://api.unsplash.com/search/photos?page=1&query=${search}&client_id=${API_KEY}`
     );
     const jsonData = await get.json();
     setData(jsonData.results);
